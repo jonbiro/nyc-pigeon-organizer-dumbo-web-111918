@@ -10,9 +10,9 @@ def nyc_pigeon_organizer(data)
 
         end
         if !pigeon_list[name][pigeon_cat]
-          pigeon_list[name][pigeon_cat] = []
+          pigeon_list[name][pigeon_cat.to_s] = []
         end
-        pigeon_list[name][pigeon_cat] << prop
+        pigeon_list[name][pigeon_cat] << prop.to_s
       end
 
     end
